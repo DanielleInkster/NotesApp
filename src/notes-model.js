@@ -1,3 +1,4 @@
+(function(exports) {
 function Note() {
   this.date = this.todaysDate()
   this.title = 'Languages'
@@ -30,14 +31,18 @@ Note.prototype.addTitle = function(title){
   this.title = title;
 }
 
-Note.prototype.createNote = function(title,input){
-  this.todaysDate();
-  this.addTitle(title);
-  this.addText(input);
+// Note.prototype.createNote = function(title,input){
+//   this.todaysDate();
+//   this.addTitle(title);
+//   this.addText(input);
+// }
+
+Note.prototype.read = function(){
+  return this.text;
 }
-  
-Note.prototype.store = function(note){
-this.notebook.notes.push(note)
-}
+exports.Note = Note;
+})(this);
+
+
 
 

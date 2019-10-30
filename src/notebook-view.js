@@ -1,9 +1,9 @@
 (function(exports) {
-  function NotebookList(notebook = new Notebook) {
+  function NotebookViewer(notebook = new Notebook) {
     this.notebook =  notebook
   }
 
-  NotebookList.prototype.code = function(){
+  NotebookViewer.prototype.code = function(){
     var array = this.notebook.Notes.map(
       note => `<br><li><div>${note.read().substring(0, 19)}...</div></li><br>`
       );
@@ -12,5 +12,5 @@
     }
 
 
-  exports.NotebookList = NotebookList;
+  exports.NotebookViewer = NotebookViewer;
 })(this);

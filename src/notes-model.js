@@ -31,12 +31,6 @@ Note.prototype.addTitle = function(title){
   this.title = title;
 }
 
-// Note.prototype.createNote = function(title,input){
-//   this.todaysDate();
-//   this.addTitle(title);
-//   this.addText(input);
-// }
-
 Note.prototype.read = function(){
   return this.text;
 }

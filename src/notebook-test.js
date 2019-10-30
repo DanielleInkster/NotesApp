@@ -14,3 +14,10 @@ function testNotebookAddsNotes() {
 };
 console.log('testNotebookAddsNotes')
 console.log(testNotebookAddsNotes())
+
+function testNotebookCreatesNotes() {
+  notebook.createNote("Hello","I'm yet another note.")
+  assert.isTrue(notebook.Notes.length===2)
+};
+console.log('testNotebookCreatesNotes')
+console.log(testNotebookCreatesNotes())

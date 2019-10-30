@@ -1,4 +1,5 @@
 (function(exports) {
+
 function Notebook(){
   this.Notes =[]
 }
@@ -27,5 +28,6 @@ Notebook.prototype.createNote = function(title, input ){
     this.Notes.push(note)
     console.log(note)
   }
+  
 exports.Notebook = Notebook;
 })(this);

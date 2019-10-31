@@ -1,11 +1,11 @@
 
 var notebook = new Notebook();
-notebook.createNote("HI!","Still a note")
+notebook.createNote("Still a note")
 var singlenote = new SingleNote(note)
 
 
 function testSingleNoteViewerDisplays() {
-  assert.isTrue(singlenote.showOne()==='<div>HI! Still a note</div>')
+  assert.isTrue(singlenote.showOne()==='<div>Still a note</div>')
 };
 
 console.log('testSingleNoteViewerDisplays')

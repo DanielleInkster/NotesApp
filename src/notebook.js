@@ -9,11 +9,6 @@ Notebook.prototype.store = function(note){
   this.Notes.push(note)
 }
 
-Notebook.prototype.returnByTitle = function(title){
-this.Notes.find(note => note.title === title);
-  return note
-}
-
 Notebook.prototype.showAllNotes = function(){
   var arrayLength = this.Notes.length;
 for (var i = 0; i < arrayLength; i++) {
@@ -21,11 +16,10 @@ for (var i = 0; i < arrayLength; i++) {
 }
 }
 
-Notebook.prototype.createNote = function(title, input ){
+Notebook.prototype.createNote = function(input){
     note = new Note
-    note.addTitle(title);
     note.addText(input);
-    this.Notes.push(note)
+    this.Notes.push( note)
     console.log(note)
   }
   

@@ -5,12 +5,11 @@
 
   NotebookViewer.prototype.code = function(){
     var array = this.notebook.Notes.map(
-      note => `<br><li><div>${(note.title + ' ' +note.read()).substring(0, 19)}...</div></li><br>`
+      note => `<br><a href="#notes/${note.id}"><li><div> ${note.read().substring(0, 19)}...</div></li></a><br>`
       );
       let code = array.join("");
       return "<ul>" + code + "</ul>";
     }
-
 
   exports.NotebookViewer = NotebookViewer;
 })(this);

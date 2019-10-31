@@ -4,7 +4,7 @@
   }
 
   SingleNote.prototype.showOne = function(){
-    return '<div>'+ this.note.title + ' '+ this.note.text + '</div>'
+    return '<div>'+this.note.text+'</div>'
   }
   exports.SingleNote = SingleNote;
 })(this);

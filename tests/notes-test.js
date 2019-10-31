@@ -28,26 +28,6 @@ console.log('testNoteforDate')
 console.log('The date is ' + note.date)
 console.log(testNoteforDate())
 
-function testNoteforTitle() {
-  assert.isTrue(note.title === 'Languages');
-};
-console.log('testNoteforTitle')
-console.log(testNoteforTitle())
-
-function testTitleCanBeChanged() {
-  note.addTitle("Hello")
-  assert.isTrue(note.title === 'Hello');
-};
-console.log('testTitleCanBeChanged')
-console.log(testTitleCanBeChanged())
-
-// function testNewNoteIsCreated() {
-//   note.createNote("Hello","I'm a second note")
-//   assert.isTrue(note.title === 'Hello');
-//   assert.isTrue(note.text === "I'm a second note");
-// };
-// console.log('testNewNoteIsCreated')
-// console.log(testNewNoteIsCreated())
 
 
 

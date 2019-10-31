@@ -1,7 +1,7 @@
 (function(exports) {
 function Note() {
+  this.id = ID.generate()
   this.date = this.todaysDate()
-  this.title = 'Languages'
   this.text = 'My favorite language is Javascript'
 }
 
@@ -25,10 +25,6 @@ return today
 
 Note.prototype.addText = function(input){
   this.text = input
-}
-
-Note.prototype.addTitle = function(title){
-  this.title = title;
 }
 
 Note.prototype.read = function(){

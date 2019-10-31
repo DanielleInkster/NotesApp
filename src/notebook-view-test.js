@@ -1,10 +1,10 @@
 
 var notebook = new Notebook();
 var notebookviewer = new NotebookViewer(notebook)
-notebook.createNote("HI!","Still a note")
+notebook.createNote("HI!","I'm an extremely long and verbose note")
 
-function testNotebookViewerOutputsHTMLNotes() {
-  assert.isTrue(notebookviewer.code()==='<ul><br><li><div>Still a note...</div></li><br></ul>')
+function testNotebookViewerOutputsHTMLNotesof20Chars() {
+  assert.isTrue(notebookviewer.code()==="<ul><br><li><div>HI! I'm an extremel...</div></li><br></ul>")
 };
-console.log('testNotebookViewerOutputsHTMLNotes')
-console.log(testNotebookViewerOutputsHTMLNotes())
+console.log('testNotebookViewerOutputsHTMLNotesof20Chars')
+console.log(testNotebookViewerOutputsHTMLNotesof20Chars())

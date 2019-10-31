@@ -4,7 +4,7 @@
     }
 
     NoteController.prototype.showCode= function() {
-      let viewer = new NotebookViewer(this.notebook);
+      viewer = new NotebookViewer(this.notebook);
       document.getElementById("app").innerHTML = viewer.code();
     }
    exports.NoteController = NoteController;
